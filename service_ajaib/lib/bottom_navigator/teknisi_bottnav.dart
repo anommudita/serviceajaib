@@ -12,7 +12,7 @@ class _TeknisiBotNavState extends State<TeknisiBotNav> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Teknisi'),
+        title: Text('Teknisi Test'),
       ),
       body: Center(
         child: new Text('Teknisi Screen', style: new TextStyle(fontSize: 40)),
