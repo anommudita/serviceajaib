@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:service_ajaib/drawer/sidebar.dart';
 
-class FavoriteBotNav extends StatefulWidget {
-  FavoriteBotNav({Key? key}) : super(key: key);
+class ShopBotNav extends StatefulWidget {
+  ShopBotNav({Key? key}) : super(key: key);
 
   @override
-  State<FavoriteBotNav> createState() => _TeknisiBotNavState();
+  State<ShopBotNav> createState() => _ShopBotNav();
 }
 
-class _TeknisiBotNavState extends State<FavoriteBotNav> {
+class _ShopBotNav extends State<ShopBotNav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +39,7 @@ class _TeknisiBotNavState extends State<FavoriteBotNav> {
             alignment: Alignment.center,
             padding: EdgeInsets.only(top: 20, bottom: 2),
             child: new Text(
-              'Whistlist',
+              'Shop',
               style: TextStyle(
                   color: Color.fromARGB(255, 24, 91, 216),
                   fontSize: 18,
@@ -49,7 +49,7 @@ class _TeknisiBotNavState extends State<FavoriteBotNav> {
           ),
           Container(
             alignment: Alignment.center,
-            child: new Text('Paling sering dicari',
+            child: new Text('Barang Terlaris',
                 style: TextStyle(
                     color: Color.fromARGB(255, 0, 0, 0),
                     fontSize: 14,
@@ -63,7 +63,7 @@ class _TeknisiBotNavState extends State<FavoriteBotNav> {
             child: TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
-                labelText: 'Cari Whishlist',
+                labelText: 'Cari Barang',
                 labelStyle: TextStyle(
                   color: Color.fromARGB(255, 161, 161, 161),
                   fontWeight: FontWeight.bold,
@@ -73,7 +73,7 @@ class _TeknisiBotNavState extends State<FavoriteBotNav> {
               ),
             ),
           ),
-          //Grid Twhislist
+          //Grid Shop
           Container(
             height: 420,
             width: 400,
@@ -96,7 +96,7 @@ class _TeknisiBotNavState extends State<FavoriteBotNav> {
                             width: 200,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage("assets/img/Teknisi 2.jpg"),
+                                image: AssetImage("assets/img/Processor.jpg"),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -105,9 +105,9 @@ class _TeknisiBotNavState extends State<FavoriteBotNav> {
                             alignment: Alignment.centerLeft,
                             padding: EdgeInsets.only(top: 5, left: 10),
                             child: Text(
-                              'RC Compartion',
+                              'Processor',
                               style: TextStyle(
-                                  color: Colors.red,
+                                  color: Colors.blueGrey,
                                   fontSize: 12,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Roboto'),
@@ -117,7 +117,7 @@ class _TeknisiBotNavState extends State<FavoriteBotNav> {
                             alignment: Alignment.centerLeft,
                             padding: EdgeInsets.only(top: 5, left: 10),
                             child: Text(
-                              'Singaraja - Bali',
+                              'RC COMPARATION',
                               style: TextStyle(
                                   color: Color.fromARGB(255, 0, 0, 0),
                                   fontSize: 15,

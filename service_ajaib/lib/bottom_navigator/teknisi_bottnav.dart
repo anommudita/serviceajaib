@@ -96,8 +96,7 @@ class _TeknisiBotNavState extends State<TeknisiBotNav> {
                             width: 200,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: NetworkImage(
-                                    'https://technoinformatika.net/wp-content/uploads/2021/04/Image-T.-Komputer.jpg'),
+                                image: AssetImage("assets/img/Teknisi 1.jpg"),
                                 fit: BoxFit.cover,
                               ),
                             ),

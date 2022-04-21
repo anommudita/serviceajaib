@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:service_ajaib/bottom_navigator/shop.dart';
 import 'package:service_ajaib/bottom_navigator/teknisi_bottnav.dart';
 import 'package:service_ajaib/bottom_navigator/home_bottnav.dart';
 import 'package:service_ajaib/bottom_navigator/favorite_bottnav.dart';
@@ -19,7 +20,8 @@ class _BottomNavAppState extends State<BottomNavApp> {
     HomeBotNav(),
     TeknisiBotNav(),
     FavoriteBotNav(),
-    ChatBotNav()
+    ChatBotNav(),
+    ShopBotNav(),
   ];
 
   final PageStorageBucket bucket = PageStorageBucket();
@@ -33,7 +35,13 @@ class _BottomNavAppState extends State<BottomNavApp> {
         bucket: bucket,
       ),
       floatingActionButton: FloatingActionButton(
-          child: new Icon(Icons.shopping_cart), onPressed: () {}),
+          child: new Icon(Icons.shopping_cart),
+          onPressed: () {
+            setState(() {
+              currentScreen = ShopBotNav();
+              currentTab = 0;
+            });
+          }),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
         //shape: CircularNotchedRectangle(),
@@ -143,3 +151,5 @@ class _BottomNavAppState extends State<BottomNavApp> {
     );
   }
 }
+
+class Shop {}
