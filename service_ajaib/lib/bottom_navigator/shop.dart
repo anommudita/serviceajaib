@@ -96,7 +96,8 @@ class _ShopBotNav extends State<ShopBotNav> {
                             width: 200,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage("assets/img/Processor.jpg"),
+                                image:
+                                    AssetImage("assets/images/Processor.jpg"),
                                 fit: BoxFit.cover,
                               ),
                             ),

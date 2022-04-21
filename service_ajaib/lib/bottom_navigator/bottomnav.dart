@@ -6,7 +6,7 @@ import 'package:service_ajaib/bottom_navigator/favorite_bottnav.dart';
 import 'package:service_ajaib/bottom_navigator/chat_bottnav.dart';
 
 class BottomNavApp extends StatefulWidget {
-  BottomNavApp({Key? key}) : super(key: key);
+  const BottomNavApp({Key? key}) : super(key: key);
 
   @override
   State<BottomNavApp> createState() => _BottomNavAppState();

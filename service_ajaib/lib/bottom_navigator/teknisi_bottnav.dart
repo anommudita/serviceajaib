@@ -96,7 +96,8 @@ class _TeknisiBotNavState extends State<TeknisiBotNav> {
                             width: 200,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage("assets/img/Teknisi 1.jpg"),
+                                image:
+                                    AssetImage("assets/images/Teknisi 1.jpg"),
                                 fit: BoxFit.cover,
                               ),
                             ),

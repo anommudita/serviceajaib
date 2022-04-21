@@ -44,7 +44,8 @@ class _TeknisiBotNavState extends State<HomeBotNav> {
                     child: new Container(
                         width: 200,
                         height: 200,
-                        child: Image.asset('assets/img/Service_Ajaib.jpeg'))),
+                        child:
+                            Image.asset('assets/images/Service_Ajaib.jpeg'))),
                 new Center(child: new Column())
               ],
             )),
@@ -73,7 +74,7 @@ class _TeknisiBotNavState extends State<HomeBotNav> {
                             width: 200,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage("assets/img/B1.jpg"),
+                                image: AssetImage("assets/images/B1.jpg"),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -129,7 +130,8 @@ class _TeknisiBotNavState extends State<HomeBotNav> {
                             width: 200,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage("assets/img/Processor.jpg"),
+                                image:
+                                    AssetImage("assets/images/Processor.jpg"),
                                 fit: BoxFit.cover,
                               ),
                             ),

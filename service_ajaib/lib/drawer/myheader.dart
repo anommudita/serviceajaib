@@ -22,12 +22,13 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
-                image: AssetImage('assets/img/rangga.jpg'),
+                image: NetworkImage(
+                    'https://i.pinimg.com/originals/0c/2e/2d/0c2e2d901e2d8aa58546e150bdc4239f.jpg'),
               ),
             ),
           ),
           Text(
-            "Sunda Empire",
+            "Eren Yeager",
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
           Text(
