@@ -37,44 +37,23 @@ class _TeknisiBotNavState extends State<TeknisiBotNav> {
         ),
       ),
       endDrawer: sideBar(),
-      body: Column(
-        children: <Widget>[
-          Container(
-            alignment: Alignment.center,
-            padding: EdgeInsets.only(top: 20, bottom: 2),
-            child: new Text(
-              'Teknisi',
-              style: TextStyle(
-                  color: Color.fromARGB(255, 24, 91, 216),
-                  fontSize: 18,
-                  fontFamily: 'Roboto',
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-          Container(
-            alignment: Alignment.center,
-            child: new Text('Teknisi Terpopuler',
-                style: TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0),
-                    fontSize: 14,
-                    fontFamily: 'Roboto',
-                    fontWeight: FontWeight.bold)),
-          ),
-          Container(
-            height: 55,
-            width: 360,
-            padding: EdgeInsets.only(top: 13),
-            child: TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Cari Teknisi',
-                labelStyle: TextStyle(
-                  color: Color.fromARGB(255, 161, 161, 161),
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Sansation',
+      body: ListView(
+        children: [
+          Column(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                padding: EdgeInsets.only(top: 20, bottom: 2),
+                child: new Text(
+                  'Teknisi',
+                  style: TextStyle(
+                      color: Color.fromARGB(255, 24, 91, 216),
+                      fontSize: 18,
+                      fontFamily: 'Roboto',
+                      fontWeight: FontWeight.bold),
                 ),
-                prefixIcon: Icon(Icons.search),
               ),
+
             ),
           ),
           //Grid Teknisi
@@ -145,6 +124,7 @@ class _TeknisiBotNavState extends State<TeknisiBotNav> {
                     child: CircularProgressIndicator(),
                   );
                 }),
+
           ),
         ],
       ),
