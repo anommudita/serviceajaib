@@ -69,15 +69,19 @@ class _TeknisiBotNavState extends State<HomeBotNav> {
                       ),
                       child: Column(
                         children: <Widget>[
-                          Container(
-                            height: 130,
-                            width: 200,
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: AssetImage("assets/images/B1.jpg"),
-                                fit: BoxFit.cover,
+                          Row(
+                            children: [
+                              Container(
+                                height: 130,
+                                width: 200,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage("assets/images/B1.jpg"),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
-                            ),
+                            ],
                           ),
                           Container(
                             alignment: Alignment.centerLeft,
