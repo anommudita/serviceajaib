@@ -31,6 +31,29 @@
 
   <title>service_ajaib</title>
   <link rel="manifest" href="manifest.json">
+
+  <script src="/web/firebase-config.js"></script>
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+
+  <script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyDxQX-RutaYeGQtKklsP73qjaUglejByc0",
+    authDomain: "service-ajaib.firebaseapp.com",
+    projectId: "service-ajaib",
+    storageBucket: "service-ajaib.appspot.com",
+    messagingSenderId: "46086552405",
+    appId: "1:46086552405:web:674a88676a444ff1e64ddc"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
+  </script>
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to

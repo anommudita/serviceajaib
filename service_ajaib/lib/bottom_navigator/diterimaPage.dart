@@ -35,6 +35,7 @@ class _Diterima extends State<Diterima> {
                     ),
                   ),
                   new Container(
+
                       child: Column(
                     children: <Widget>[
                       Row(
@@ -81,6 +82,7 @@ class _Diterima extends State<Diterima> {
                       )
                     ],
                   )),
+
                 ],
               ),
             )

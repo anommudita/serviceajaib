@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "46086552405",
+    "project_id": "service-ajaib",
+    "storage_bucket": "service-ajaib.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46086552405:android:b19a969f3b467fdde64ddc",
+        "android_client_info": {
+          "package_name": "com.example.service_ajaib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46086552405-40gb4sv1i0lkluuep8ch9iuoas3siqmu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.service_ajaib",
+            "certificate_hash": "9f784fb21cff5485d997a98627745ef56594d3c9"
+          }
+        },
+        {
+          "client_id": "46086552405-lsrbgdiqqu0umpp0ojogo05ab3nt6ho9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdprwxn5AU02_X7uEhmiA5IRSAnZaoxCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46086552405-lsrbgdiqqu0umpp0ojogo05ab3nt6ho9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
