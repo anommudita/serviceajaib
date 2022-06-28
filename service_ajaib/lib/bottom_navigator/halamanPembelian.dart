@@ -26,16 +26,8 @@ class _Diterima extends State<Diterima> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   // ignore: unnecessary_new
+                  new Container(child: Container()),
                   new Container(
-                    child: const Icon(
-                      Icons.check_circle_outline,
-                      color: Colors.blue,
-                      size: 24.0,
-                      semanticLabel: 'Pesananmu sudah kami terima',
-                    ),
-                  ),
-                  new Container(
-
                       child: Column(
                     children: <Widget>[
                       Row(
@@ -82,7 +74,6 @@ class _Diterima extends State<Diterima> {
                       )
                     ],
                   )),
-
                 ],
               ),
             )
