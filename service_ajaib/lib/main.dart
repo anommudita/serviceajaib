@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'bottom nav',
+      title: 'Home',
       /*routes: {
         LoginPage.routeName : (context) => const LoginPage(),
         RegisterPage.routeName : (context) => const RegisterPage(),
