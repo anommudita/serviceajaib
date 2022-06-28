@@ -35,24 +35,52 @@ class _Diterima extends State<Diterima> {
                     ),
                   ),
                   new Container(
-                    width: 200,
-                    height: 45,
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: Colors.blue,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                      ),
-                      onPressed: () {},
-                      child: Text(
-                        "HOME",
-                        style: TextStyle(
-                          color: Color(0xffffffff),
-                        ),
-                      ),
-                    ),
-                  ),
+                      child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          new Container(
+                            width: 200,
+                            height: 45,
+                            child: TextButton(
+                              style: TextButton.styleFrom(
+                                backgroundColor: Colors.blue,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                              ),
+                              onPressed: () {},
+                              child: Text(
+                                "HOME",
+                                style: TextStyle(
+                                  color: Color(0xffffffff),
+                                ),
+                              ),
+                            ),
+                          ),
+                          new Container(
+                            width: 200,
+                            height: 45,
+                            child: TextButton(
+                              style: TextButton.styleFrom(
+                                backgroundColor: Colors.blue,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                              ),
+                              onPressed: () {},
+                              child: Text(
+                                "Chat Teknisi",
+                                style: TextStyle(
+                                  color: Color(0xffffffff),
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  )),
                 ],
               ),
             )

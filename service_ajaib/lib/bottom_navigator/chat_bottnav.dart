@@ -12,19 +12,24 @@ class ChatBotNav extends StatefulWidget {
 class _ChatBotNavState extends State<ChatBotNav> {
   List<ChatUsers> chatUsers = [
     ChatUsers(
-        name: "Jane Russel",
-        messageText: "Awesome Setup",
-        imageURL: "images/userImage1.jpeg",
+        name: "Kerta",
+        messageText: "Mesan teknisi bagaimana caranya?",
+        imageURL: "../assets/images/Teknisi 1.jpg",
         time: "Now"),
     ChatUsers(
-        name: "Glady's Murphy",
-        messageText: "That's Great",
-        imageURL: "images/userImage2.jpeg",
+        name: "Younky",
+        messageText: "Belok kiri mas",
+        imageURL: "../assets/images/Teknisi 2.jpg",
         time: "Yesterday"),
     ChatUsers(
-        name: "Jorge Henry",
-        messageText: "Hey where are you?",
-        imageURL: "images/userImage3.jpeg",
+        name: "Anom",
+        messageText: "PP aku kok sama ",
+        imageURL: "../assets/images/rangga.jpg",
+        time: "31 Mar"),
+    ChatUsers(
+        name: "Wahde",
+        messageText: "Kok gak selesai ini mas? ",
+        imageURL: "../assets/images/B1.jpg",
         time: "31 Mar"),
   ];
   @override
