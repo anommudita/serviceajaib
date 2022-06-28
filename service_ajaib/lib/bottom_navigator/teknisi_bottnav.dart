@@ -226,7 +226,103 @@ class _kontenTeknisiState extends State<kontenTeknisi> {
             Scaffold.of(context).openDrawer();
           },
         ),
+<<<<<<< HEAD
       )),
+=======
+      ),
+      endDrawer: sideBar(),
+      body: ListView(
+        children: [
+          Column(
+            children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                padding: EdgeInsets.only(top: 20, bottom: 2),
+                child: new Text(
+                  'Teknisi',
+                  style: TextStyle(
+                      color: Color.fromARGB(255, 24, 91, 216),
+                      fontSize: 18,
+                      fontFamily: 'Roboto',
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+
+            ),
+          ),
+          //Grid Teknisi
+          Container(
+            height: 420,
+            width: 400,
+            padding: EdgeInsets.only(top: 10),
+            child: StreamBuilder(
+                stream: db.snapshots(),
+                builder: (BuildContext context,
+                    AsyncSnapshot<QuerySnapshot> snapshot) {
+                  // print(snapshot.data!.docs.length);
+                  if (snapshot.hasData) {
+                    return GridView.builder(
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          childAspectRatio: 1.0,
+                        ),
+                        itemCount: snapshot.data!.docs.length,
+                        itemBuilder: (context, index) => Card(
+                              margin: EdgeInsets.all(10),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Column(
+                                children: <Widget>[
+                                  Container(
+                                    height: 130,
+                                    width: 200,
+                                    decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                        image: NetworkImage(snapshot
+                                            .data!.docs[index]["gambar"]),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    alignment: Alignment.centerLeft,
+                                    padding: EdgeInsets.only(top: 5, left: 10),
+                                    child: Text(
+                                      snapshot.data!.docs[index]["namaTeknisi"],
+                                      style: TextStyle(
+                                          color:
+                                              Color.fromARGB(255, 216, 20, 138),
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold,
+                                          fontFamily: 'Roboto'),
+                                    ),
+                                  ),
+                                  Container(
+                                    alignment: Alignment.centerLeft,
+                                    padding: EdgeInsets.only(top: 5, left: 10),
+                                    child: Text(
+                                      '${snapshot.data!.docs[index]["kota"]} - ${snapshot.data!.docs[index]["provinsi"]}',
+                                      style: TextStyle(
+                                          color: Color.fromARGB(255, 0, 0, 0),
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold,
+                                          fontFamily: 'Roboto'),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ));
+                  }
+                  return const Center(
+                    child: CircularProgressIndicator(),
+                  );
+                }),
+
+          ),
+        ],
+      ),
+>>>>>>> 080eae9b9cf531ba53b6b5e65d439fe417b99d34
     );
   }
 }
